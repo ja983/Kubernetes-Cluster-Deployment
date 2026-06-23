@@ -1,0 +1,7 @@
+kubectl set image deployment/nginx-deployment nginx=nginx:1.26
+
+kubectl rollout status deployment nginx-deployment
+
+# Rollback if issue:
+
+kubectl rollout undo deployment nginx-deployment
